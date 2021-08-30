@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Cronômetro</title>
+</head>
+<body>
+    <main>
+        <h1>Cronômetro</h1>
+        <p id="texto-cron"><span id="segundos">00</span>:<span id="milesimos">00</span></p>
+        <div id="botoes">
+            <button class="botao start" onclick="start()" name="start">Começar</button>
+            <button class="botao pause" onclick="pause()" name="pause">Parar</button>
+            <button class="botao reset" onclick="reset()" name="reset">Resetar</button>
+        </div>
+    </main>
+
+    <script>
+        let segundos = 0
+        let milesimos = 0
+        let milesimosText = document.getElementById("milesimos")
+        let segundosText = document.getElementById("segundos")
+        let cron;
+        let rodando = false;
+    </script>
+</body>
+</html>
